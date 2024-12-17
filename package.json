@@ -1,17 +1,15 @@
 {
-  "name": "nodejs-gmp-solutions",
+  "name": "nodejs-gmp-module-2-standard-library",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "stop": "exit 0",
     "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "coverage": "jest --coverage --reporters=jest-junit --coverageDirectory=.",
     "pretest": "npm run build",
-    "posttest": "exit 0"
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "npm run lint --fix"
   },
   "keywords": [],
   "author": "",

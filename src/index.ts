@@ -1,3 +1,9 @@
-import activityMonitor from './activity-monitor';
+/* eslint-disable max-len */
+import { runBackup } from './backup';
 
-export default activityMonitor;
+const sourceDir = process.argv[2];
+const destinationDir = process.argv[3];
+
+runBackup(sourceDir, destinationDir);
+
+// ts-node ./src/index.ts /Users/.../nodejs-gmp-solutions/src /Users/.../nodejs-gmp-solutions/src-backup
