@@ -53,8 +53,8 @@ export const createArchive = async (sourceDir: string, destinationDir: string): 
   //    - Reads the content of the source directory using `fs.readDir()` function (first level only, no nested subdirectories)
   //    - Calculates a checksum of the source directory content using `calculateDirectoryChecksum()` function
   //    - Appends the result of tar creation into the log file (using `fs.appendFile()` file):
-  //      - On success: `YYYY-MM-DDTHH-MM-SS-SSSZ: SUCCESS: Backup created at /output-path/backup-2020-01-01T00-00-00-000Z.tar.gz, HASH: {hash}\n`
-  //      - On error: - `YYYY-MM-DDTHH-MM-SS-SSSZ: FAILED: tar command failed\n`
+  //      - On success: `YYYY-MM-DDTHH:MM:SS:SSSZ: SUCCESS: Backup created at /output-path/backup-2020-01-01T00-00-00-000Z.tar.gz, HASH: {hash}\n`
+  //      - On error: - `YYYY-MM-DDTHH:MM:SS:SSSZ: FAILED: tar command failed\n`
 };
 
 /**
