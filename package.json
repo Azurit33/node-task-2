@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "engines": {
+    "node": "^22"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -11,7 +14,6 @@
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "npm run lint --fix"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
